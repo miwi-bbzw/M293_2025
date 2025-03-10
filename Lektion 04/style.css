@@ -19,22 +19,43 @@ main {
   background-color: #fff;
 }
 
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #007cc2;
+  color: #fff;
+}
+
 img {
   border-radius: 50%;
   max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#about-me p {
+  font-size: 16px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+#about-me h1,
+#about-me h2,
+#interests h1 {
+  text-transform: uppercase;
+}
+
+img + h2 {
+    background-color: red !important;
 }
 
 p > b {
-  color: blue;
+    color: blue;
 }
 
 b ~ i {
-  color: red;
-}
-
-img + h2
-{
-  background-color: red !important;
+    color: red;
+    text-decoration: underline;
 }
 
 #about-me h2 {
@@ -44,3 +65,39 @@ img + h2
   padding: 5px;
 }
 
+#interests {
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li:hover {
+  background-color: lightgray;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+
+#inline p {
+  display: inline;
+}
+
+#inline p:not(:last-child)::after {
+  content: ",";
+  margin-right: 5px; /* optional: fügt etwas Abstand zwischen den Absätzen und den Kommas hinzu */
+}
